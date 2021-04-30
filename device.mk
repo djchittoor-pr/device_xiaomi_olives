@@ -15,7 +15,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/olives/olives-vendor.mk)
+$(call inherit-product, vendor/xiaomi/olive/olive-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.olives
+    android.hardware.light@2.0-service.olive
 
 # Net
 PRODUCT_PACKAGES += \

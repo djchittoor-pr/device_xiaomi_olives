@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/olives
+DEVICE_PATH := device/xiaomi/olive
 
 # Arch
 TARGET_ARCH := arm64
@@ -52,8 +52,8 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 
 BOARD_RAMDISK_OFFSET := 0x01000000
 
-TARGET_KERNEL_CONFIG := olives-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/olives
+TARGET_KERNEL_CONFIG := olive-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/olive
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -140,7 +140,7 @@ BOARD_USES_QCOM_HARDWARE := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Sepolicy - olives
+# Sepolicy - olive
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Sepolicy - Common
@@ -159,4 +159,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 
 # Inherit from the proprietary version
-include vendor/xiaomi/olives/BoardConfigVendor.mk
+include vendor/xiaomi/olive/BoardConfigVendor.mk

@@ -24,7 +24,7 @@ fi
 set -e
 
 # Required!
-DEVICE=olives
+DEVICE=olive
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

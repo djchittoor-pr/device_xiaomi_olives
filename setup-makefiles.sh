@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-DEVICE=olives
+DEVICE=olive
 VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2020
